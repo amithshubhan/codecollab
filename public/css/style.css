@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box ;
+    /* font-family: 'Roboto Mono', monospace; */
+    
+}
+.splash{
+  font-family: 'Quicksand', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 200;
+  color: white;
+  text-align:  center;
+  line-height: 90vh;
+
+
+}
+.splash.display-none{
+  font-family: 'Quicksand', sans-serif;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: -10;
+  color: white;
+  text-align:  center;
+  line-height: 90vh;
+  transition: all 0.5s;
+
+}
+
+@keyframes fadeIn {
+  to{
+    opacity: 1;
+  }
+}
+.fade-in{
+  opacity:0;
+  animation: fadeIn 1s ease-in forwards;
+
+}
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('../Bean Eater-1s-200px.gif') no-repeat center;
+  z-index: 99999;
+}
+.header {
+  /* position: absolute; */
+  display: flex;
+  list-style: none;
+}
+.navbar{
+  position: relative;
+}
+.logoimg{
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+}
+  
+.push {
+  margin-left: auto;
+}
+  
+html,body
+{   background: black;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-auto-rows: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    padding:2px;
+
+}
+video {
+    width:100%;
+    height:100%;
+    bottom: 10px;
+    top: 10px;
+    border: white;
+    border-radius: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.container{
+    width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+  justify-content: left;
+  align-items: center;
+  /* padding-left: 40px; */
+  /* font-family: "Lucida Handwriting", "Brush Script MT", cursive;; */
+  font-family: "Lucida Console", "Courier New", monospace;
+    /* justify-content: center; */
+    height: 70px;
+    font-size: 30;
+}
+
+.switch{
+  position: relative;
+  width: 60px;
+  height: 30px;
+  left: 100%;
+  right: 0;
+  display: inline-block;
+}
+
+.slider{
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom: 0; 
+  cursor: pointer;
+  background-color: grey;
+  transition: .4s;
+  border-radius: 34px;
+
+}
+.switch input{
+  display: none;
+}
+.slider:before{
+  position: absolute;
+  content: '';
+  height: 25px;
+  width: 25px;
+  left: 2px;
+  bottom: 2px;
+  background-color: red;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider
+{
+  background-color: orange;
+}
+
+input:checked + .slider:before
+{
+  transform: translateX(30px);
+}
+.texter{
+  position: relative;
+  right: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  /* z-index: 10; */
+}
+.togglebuttons1{
+  margin-right: 20px;
+  margin-left: 20px;
+  /* bottom: 50%; */
+}
+.togglebuttons2{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.content{
+    vertical-align: middle;
+}
+.cm{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cm {
+  position: relative;
+  
+}
+
+.videos
+{   
+    right:10px;
+    bottom:10px;
+    top: 10px;
+    border: white;
+    border-radius:10px;
+    position: absolute;
+    z-index: 10;
+  }
+  
+    .CodeMirror {
+        font-family: Arial, monospace;
+        font-size: 20px;
+        }
+    /*
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border:1px solid;
+  }
+  
+  .videos {
+    position: absolute;
+    margin-top: -10px;
+    left:0;
+    right: 100px;
+    margin:5px;
+    padding:5px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+  } */
+/* #sticky-div {
+    background-color: green;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+} */
+
+.starterbody{
+  background: #282a36;
+}
+
+.former{
+  
+  width :100%;
+  height:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.forming{
+  background: black;
+  position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+border: 5px solid #FFFF00;
+  width: 400px;
+  height: 200px;
+  border-radius: 40px;
+}
+.name {
+  margin: 10px;
+}
+.pass{
+  margin: 10px;
+}
+.butto{
+  margin: 30px;
+  right: 50%;
+  transform: translate-X(50%);
+}
+/* .passdisplay {
+  position : absolute;
+  right: 0;
+  margin: 30px;
+} */
